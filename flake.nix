@@ -11,7 +11,7 @@
             rust = {
                 path = ./rust;
                 description = "Remote flake for working in rust";
-            }
+            };
         };
     };
 }
