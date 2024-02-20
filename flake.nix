@@ -7,6 +7,11 @@
                 path = ./opendds;
                 description = "Remote flake for working with OpenDDS";
             };
+
+            rust = {
+                path = ./rust;
+                description = "Remote flake for working in rust";
+            }
         };
     };
 }
