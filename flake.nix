@@ -3,14 +3,24 @@
 
     outputs = { self } : {
         templates = {
-            opendds = {
-                path = ./opendds;
-                description = "Remote flake for working with OpenDDS";
+            cmake = {
+                path = ./cmake;
+                description = "Flake template for cmake based C++ projects";
+            };
+
+            meson = {
+                path = ./meson;
+                description = "Flake template for meson based C++ projects";
             };
 
             rust = {
                 path = ./rust;
-                description = "Remote flake for working in rust";
+                description = "Flake template for rust based projects";
+            };
+
+            ros = {
+                path = ./ros;
+                description = "Flake template for ROS projects";  
             };
         };
     };
