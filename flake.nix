@@ -3,6 +3,11 @@
 
     outputs = { self } : {
         templates = {
+            default = {
+                path = ./default;
+                description = "Default template for flake with flake-utils";  
+            };
+
             cmake = {
                 path = ./cmake;
                 description = "Flake template for cmake based C++ projects";
