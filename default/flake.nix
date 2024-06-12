@@ -13,7 +13,7 @@
           inherit system;
         };
       in {
-        devShell = pkgs.mkShell.override {stdenv = pkgs.clangStdenv;} {
+        devShell = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [];
           buildInputs = with pkgs; [];
         };
