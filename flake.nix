@@ -18,6 +18,11 @@
                 description = "Flake template for meson based C++ projects";
             };
 
+            csharp = {
+                path = ./csharp;
+                description = "Flake template for meson based C# projects";
+            };
+
             rust = {
                 path = ./rust;
                 description = "Flake template for rust based projects";
